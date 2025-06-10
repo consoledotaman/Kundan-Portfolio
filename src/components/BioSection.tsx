@@ -1,14 +1,17 @@
 
 import React from 'react';
+import { Meteors } from '@/components/ui/meteors';
 
 const BioSection = () => {
   return (
-    <section className="py-20 px-6 section-accent">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-20 px-6 section-accent overflow-hidden">
+      <Meteors number={10} />
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left side - Image */}
           <div className="animate-slide-in-left">
-            <div className="portfolio-card">
+            <div className="portfolio-card animate-float">
               <img 
                 src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=800&fit=crop"
                 alt="Featured Work"
@@ -20,7 +23,7 @@ const BioSection = () => {
           {/* Right side - Bio and Approach */}
           <div className="space-y-12 animate-slide-in-right">
             {/* Bio */}
-            <div>
+            <div className="animate-fade-in">
               <h3 className="font-benguiat text-3xl md:text-4xl font-bold text-gold mb-6">
                 CREATIVE BIO
               </h3>
@@ -38,7 +41,7 @@ const BioSection = () => {
             </div>
 
             {/* Approach */}
-            <div>
+            <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <h3 className="font-benguiat text-3xl md:text-4xl font-bold text-gold mb-6">
                 MY APPROACH
               </h3>

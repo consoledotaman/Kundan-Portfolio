@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Meteors } from '@/components/ui/meteors';
 
 const EducationSection = () => {
   const education = [
@@ -30,23 +31,25 @@ const EducationSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 section-dark">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-20 px-6 section-dark overflow-hidden">
+      <Meteors number={8} />
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="mb-16">
           <h2 className="section-heading text-center mb-4 animate-fade-in">
             EDUCATION
           </h2>
-          <div className="w-full h-0.5 bg-gold"></div>
+          <div className="w-full h-0.5 bg-gold animate-fade-in" style={{ animationDelay: '0.2s' }}></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {education.map((item, index) => (
             <div 
               key={index}
-              className="space-y-6 animate-slide-in-left"
+              className="space-y-6 animate-slide-in-left hover:scale-105 transition-transform duration-300"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="text-gold font-benguiat text-2xl font-bold">
+              <div className="text-gold font-benguiat text-2xl font-bold animate-glow">
                 {item.year}
               </div>
               
@@ -66,7 +69,7 @@ const EducationSection = () => {
         </div>
 
         {/* Bottom atmospheric image */}
-        <div className="mt-16 w-full h-48 overflow-hidden rounded-lg opacity-40">
+        <div className="mt-16 w-full h-48 overflow-hidden rounded-lg opacity-40 animate-fade-in" style={{ animationDelay: '0.8s' }}>
           <img 
             src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=1200&h=400&fit=crop"
             alt="Atmospheric background"

@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -53,7 +52,6 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Main design system colors
 				'dark-forest': '#0a1704',
 				'gold': '#e1b62f',
 				'light-cream': '#efefef',
@@ -120,6 +118,35 @@ export default {
 						opacity: '1',
 						transform: 'translateX(0)'
 					}
+				},
+				'meteor': {
+					'0%': { 
+						transform: 'rotate(215deg) translateX(0)', 
+						opacity: '1' 
+					},
+					'70%': { 
+						opacity: '1' 
+					},
+					'100%': {
+						transform: 'rotate(215deg) translateX(-500px)',
+						opacity: '0',
+					},
+				},
+				'float': {
+					'0%, 100%': { 
+						transform: 'translateY(0px)' 
+					},
+					'50%': { 
+						transform: 'translateY(-20px)' 
+					}
+				},
+				'glow': {
+					'0%, 100%': { 
+						boxShadow: '0 0 20px rgba(225, 182, 47, 0.3)' 
+					},
+					'50%': { 
+						boxShadow: '0 0 40px rgba(225, 182, 47, 0.6)' 
+					}
 				}
 			},
 			animation: {
@@ -127,7 +154,10 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.8s ease-out',
 				'slide-in-left': 'slide-in-left 0.8s ease-out',
-				'slide-in-right': 'slide-in-right 0.8s ease-out'
+				'slide-in-right': 'slide-in-right 0.8s ease-out',
+				'meteor-effect': 'meteor 5s linear infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite alternate'
 			}
 		}
 	},
