@@ -3,7 +3,7 @@ import React from 'react';
 
 const BioSection = () => {
   return (
-    <section className="py-20 px-6 bg-vanilla">
+    <section className="py-20 px-6 section-accent">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left side - Image */}
@@ -21,7 +21,7 @@ const BioSection = () => {
           <div className="space-y-12 animate-slide-in-right">
             {/* Bio */}
             <div>
-              <h3 className="font-benguiat text-3xl md:text-4xl font-bold text-forest mb-6">
+              <h3 className="font-benguiat text-3xl md:text-4xl font-bold text-gold mb-6">
                 CREATIVE BIO
               </h3>
               <p className="body-text mb-4">
@@ -39,7 +39,7 @@ const BioSection = () => {
 
             {/* Approach */}
             <div>
-              <h3 className="font-benguiat text-3xl md:text-4xl font-bold text-forest mb-6">
+              <h3 className="font-benguiat text-3xl md:text-4xl font-bold text-gold mb-6">
                 MY APPROACH
               </h3>
               <p className="body-text mb-4">

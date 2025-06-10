@@ -24,9 +24,9 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-coffee">
+    <section className="py-20 px-6 section-dark">
       <div className="max-w-6xl mx-auto">
-        <h2 className="section-heading text-vanilla text-center mb-16 animate-fade-in">
+        <h2 className="section-heading text-center mb-16 animate-fade-in">
           TESTIMONIALS
         </h2>
 
@@ -34,7 +34,7 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-vanilla rounded-lg p-8 portfolio-card animate-slide-in-left"
+              className="portfolio-card p-8 animate-slide-in-left"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="mb-6">
@@ -47,14 +47,14 @@ const TestimonialsSection = () => {
                 "{testimonial.quote}"
               </p>
               
-              <div className="border-t border-sage pt-4">
-                <p className="font-benguiat text-lg font-bold text-forest">
+              <div className="border-t border-gold/30 pt-4">
+                <p className="font-benguiat text-lg font-bold text-gold">
                   {testimonial.author}
                 </p>
-                <p className="body-text text-sm text-rust">
+                <p className="body-text text-sm">
                   {testimonial.position}
                 </p>
-                <p className="body-text text-sm text-rust">
+                <p className="body-text text-sm">
                   {testimonial.company}
                 </p>
               </div>

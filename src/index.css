@@ -7,64 +7,64 @@
 
 @layer base {
   :root {
-    --background: 44 19 16; /* #dad3bf in HSL */
-    --foreground: 35 18 9; /* #302710 in HSL */
+    --background: 10 33 6; /* #0a1704 in HSL */
+    --foreground: 0 0 94; /* #efefef in HSL */
 
-    --card: 44 19 16;
-    --card-foreground: 35 18 9;
+    --card: 10 33 6;
+    --card-foreground: 0 0 94;
 
-    --popover: 44 19 16;
-    --popover-foreground: 35 18 9;
+    --popover: 10 33 6;
+    --popover-foreground: 0 0 94;
 
-    --primary: 98 41 23; /* #193b0a in HSL */
-    --primary-foreground: 60 85 90; /* #f8ecc5 in HSL */
+    --primary: 45 78 55; /* #e1b62f in HSL */
+    --primary-foreground: 10 33 6;
 
     --secondary: 83 67 28; /* #3d5032 in HSL */
-    --secondary-foreground: 60 85 90;
+    --secondary-foreground: 0 0 94;
 
-    --muted: 44 19 16;
-    --muted-foreground: 35 18 9;
+    --muted: 10 33 6;
+    --muted-foreground: 0 0 94;
 
     --accent: 45 78 55; /* #e1b62f in HSL */
-    --accent-foreground: 35 18 9;
+    --accent-foreground: 10 33 6;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 44 19 16;
-    --input: 44 19 16;
+    --border: 45 78 55;
+    --input: 10 33 6;
     --ring: 45 78 55;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 35 18 9;
-    --foreground: 44 19 16;
+    --background: 10 33 6;
+    --foreground: 0 0 94;
 
-    --card: 35 18 9;
-    --card-foreground: 44 19 16;
+    --card: 10 33 6;
+    --card-foreground: 0 0 94;
 
-    --popover: 35 18 9;
-    --popover-foreground: 44 19 16;
+    --popover: 10 33 6;
+    --popover-foreground: 0 0 94;
 
-    --primary: 60 85 90;
-    --primary-foreground: 35 18 9;
+    --primary: 45 78 55;
+    --primary-foreground: 10 33 6;
 
     --secondary: 83 67 28;
-    --secondary-foreground: 44 19 16;
+    --secondary-foreground: 0 0 94;
 
-    --muted: 35 18 9;
-    --muted-foreground: 44 19 16;
+    --muted: 10 33 6;
+    --muted-foreground: 0 0 94;
 
     --accent: 45 78 55;
-    --accent-foreground: 35 18 9;
+    --accent-foreground: 10 33 6;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 35 18 9;
-    --input: 35 18 9;
+    --border: 45 78 55;
+    --input: 10 33 6;
     --ring: 45 78 55;
   }
 }
@@ -75,7 +75,7 @@
   }
 
   body {
-    @apply bg-linen text-earth font-times;
+    @apply bg-dark-forest text-light-cream font-times;
   }
 
   /* Custom scrollbar */
@@ -84,37 +84,46 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-linen;
+    @apply bg-dark-forest;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-sage rounded-full;
+    @apply bg-gold rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-forest;
+    @apply bg-gold/80;
   }
 }
 
 @layer components {
   .hero-text {
-    @apply font-benguiat text-6xl md:text-8xl lg:text-9xl font-bold tracking-wider;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    @apply font-benguiat text-6xl md:text-8xl lg:text-9xl font-bold tracking-wider text-gold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
   }
 
   .section-heading {
-    @apply font-benguiat text-4xl md:text-5xl lg:text-6xl font-bold text-forest;
+    @apply font-benguiat text-4xl md:text-5xl lg:text-6xl font-bold text-gold tracking-wide;
   }
 
   .body-text {
-    @apply font-times text-base md:text-lg leading-relaxed text-earth;
+    @apply font-times text-base md:text-lg leading-relaxed text-light-cream;
   }
 
   .portfolio-card {
-    @apply bg-vanilla rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105;
+    @apply bg-dark-forest/80 rounded-lg shadow-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-gold/20;
+    border: 1px solid rgba(225, 182, 47, 0.2);
   }
 
   .gradient-overlay {
-    background: linear-gradient(135deg, rgba(25,59,10,0.8) 0%, rgba(75,39,19,0.6) 100%);
+    background: linear-gradient(135deg, rgba(10,23,4,0.9) 0%, rgba(10,23,4,0.7) 100%);
+  }
+
+  .section-dark {
+    @apply bg-dark-forest;
+  }
+
+  .section-accent {
+    @apply bg-dark-forest/95;
   }
 }

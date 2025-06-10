@@ -5,90 +5,77 @@ import { Button } from '@/components/ui/button';
 const FeaturedWorksSection = () => {
   const featuredWorks = [
     {
-      title: 'Award-Winning Documentary',
-      description: 'A powerful narrative exploring human resilience through intimate storytelling and innovative editing techniques.',
-      image: 'https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&h=600&fit=crop',
-      category: 'Documentary'
+      title: 'BREAKING BOUNDARIES: PATRICK MEMPHIS TRANSFORMS INDIE CINEMA WITH WHISPERS OF THE CITY',
+      description: 'A powerful narrative exploring human resilience through intimate storytelling and innovative editing techniques that push the boundaries of conventional cinema.',
+      image: 'https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&h=600&fit=crop'
     },
     {
-      title: 'Global Brand Campaign',
-      description: 'Multi-platform visual identity and motion graphics package for international luxury brand launch.',
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop',
-      category: 'Commercial'
+      title: 'FROM INDIE TO ICON: PATRICK MEMPHIS AND THE EVOLUTION OF BEGINNING\'S END',
+      description: 'Multi-platform visual identity and motion graphics package that revolutionized how independent films approach mainstream audiences.',
+      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop'
     },
     {
-      title: 'Experimental Art Film',
-      description: 'Pushing boundaries of visual expression through abstract storytelling and cutting-edge post-production.',
-      image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=600&fit=crop',
-      category: 'Art Film'
+      title: 'IN CONVERSATION WITH PATRICK MEMPHIS: THE ARTISTIC VISION BEHIND CHILDREN OF THE FALL',
+      description: 'An intimate look into the creative process behind one of the year\'s most critically acclaimed independent films.',
+      image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=600&fit=crop'
     }
   ];
 
   return (
-    <section className="py-20 px-6 bg-olive">
+    <section className="py-20 px-6 section-dark">
       <div className="max-w-7xl mx-auto">
-        <h2 className="section-heading text-vanilla text-center mb-16 animate-fade-in">
-          FEATURED WORKS
-        </h2>
+        <div className="mb-16">
+          <h2 className="section-heading mb-4 animate-fade-in">
+            FEATURED WORK
+          </h2>
+          <div className="w-full h-0.5 bg-gold"></div>
+          
+          {/* Tip box */}
+          <div className="float-right mt-8 border border-gold/30 p-6 max-w-md">
+            <h3 className="font-benguiat text-lg font-bold text-gold mb-2">Tip</h3>
+            <p className="body-text text-sm">
+              You can paste direct links on this page to show a preview of the article.
+              *Delete this tip before publishing your website.
+            </p>
+          </div>
+        </div>
 
-        <div className="space-y-16">
+        <div className="space-y-16 clear-both">
           {featuredWorks.map((work, index) => (
             <div 
               key={index}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
-              }`}
+              className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start"
             >
               {/* Image */}
-              <div className={`animate-slide-in-${index % 2 === 0 ? 'left' : 'right'}`}>
+              <div className="lg:col-span-1 animate-slide-in-left">
                 <div className="portfolio-card overflow-hidden">
                   <img 
                     src={work.image}
                     alt={work.title}
-                    className="w-full h-80 lg:h-96 object-cover transition-transform duration-500 hover:scale-105"
+                    className="w-full h-80 object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
               </div>
 
               {/* Content */}
-              <div className={`space-y-6 animate-slide-in-${index % 2 === 0 ? 'right' : 'left'} ${
-                index % 2 === 1 ? 'lg:order-first' : ''
-              }`}>
-                <div className="inline-block bg-gold text-earth px-4 py-2 rounded-full">
-                  <span className="font-times text-sm font-semibold">
-                    {work.category}
-                  </span>
-                </div>
-
-                <h3 className="font-benguiat text-3xl md:text-4xl font-bold text-vanilla">
+              <div className="lg:col-span-2 space-y-6 animate-slide-in-right">
+                <h3 className="font-benguiat text-2xl font-bold text-gold leading-tight">
                   {work.title}
                 </h3>
 
-                <p className="body-text text-vanilla text-lg leading-relaxed">
+                <p className="body-text leading-relaxed">
                   {work.description}
                 </p>
 
                 <Button 
-                  className="bg-vanilla text-earth hover:bg-cream transition-colors duration-300 font-times font-semibold px-8 py-3"
+                  variant="outline"
+                  className="border-gold text-gold hover:bg-gold hover:text-dark-forest transition-all duration-300 font-times font-semibold px-8 py-3 bg-transparent"
                 >
-                  Read More
+                  Read more
                 </Button>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Footer */}
-        <div className="text-center mt-20 animate-fade-in">
-          <p className="body-text text-vanilla text-lg mb-8">
-            Ready to bring your vision to life? Let's create something extraordinary together.
-          </p>
-          <Button 
-            size="lg"
-            className="bg-gold text-earth hover:bg-rust hover:text-vanilla transition-all duration-300 font-benguiat text-lg px-12 py-4"
-          >
-            START A PROJECT
-          </Button>
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ import FeaturedWorksSection from '../components/FeaturedWorksSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-linen">
+    <div className="min-h-screen bg-dark-forest">
       <HeroSection />
       <DirectorialSection />
       <BioSection />

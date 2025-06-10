@@ -53,17 +53,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Custom portfolio colors
-				forest: '#193b0a',
-				gold: '#e1b62f',
-				cream: '#efefef',
-				rust: '#a86c40',
-				coffee: '#4b2713',
-				vanilla: '#f8ecc5',
-				sage: '#3d5032',
-				olive: '#788552',
-				earth: '#302710',
-				linen: '#dad3bf'
+				// Main design system colors
+				'dark-forest': '#0a1704',
+				'gold': '#e1b62f',
+				'light-cream': '#efefef',
+				'warm-brown': '#a86c40',
+				'deep-brown': '#4b2713',
+				'cream': '#f8ecc5',
+				'sage': '#3d5032',
+				'olive': '#788552',
+				'earth': '#302710',
+				'linen': '#dad3bf'
 			},
 			fontFamily: {
 				'benguiat': ['Playfair Display SC', 'Cinzel', 'serif'],
@@ -94,7 +94,7 @@ export default {
 				'fade-in': {
 					'0%': {
 						opacity: '0',
-						transform: 'translateY(20px)'
+						transform: 'translateY(30px)'
 					},
 					'100%': {
 						opacity: '1',
@@ -125,9 +125,9 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.6s ease-out',
-				'slide-in-left': 'slide-in-left 0.6s ease-out',
-				'slide-in-right': 'slide-in-right 0.6s ease-out'
+				'fade-in': 'fade-in 0.8s ease-out',
+				'slide-in-left': 'slide-in-left 0.8s ease-out',
+				'slide-in-right': 'slide-in-right 0.8s ease-out'
 			}
 		}
 	},

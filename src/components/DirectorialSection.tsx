@@ -3,7 +3,7 @@ import React from 'react';
 
 const DirectorialSection = () => {
   return (
-    <section className="py-20 px-6 bg-cream">
+    <section className="py-20 px-6 section-dark">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left side - Text content */}
@@ -14,16 +14,16 @@ const DirectorialSection = () => {
                 <br />
                 UNIVERSE
               </h2>
-              <div className="hidden md:block w-24 h-0.5 bg-forest"></div>
+              <div className="hidden md:block w-32 h-0.5 bg-gold"></div>
             </div>
             
             <div className="animate-fade-in">
-              <p className="body-text text-xl leading-relaxed">
+              <p className="body-text text-xl leading-relaxed mb-6">
                 A visionary artist who transforms concepts into compelling visual narratives. 
                 With a unique blend of technical expertise and creative intuition, every project 
                 becomes a journey through innovative storytelling and distinctive aesthetic vision.
               </p>
-              <p className="body-text mt-6">
+              <p className="body-text">
                 Specializing in creating immersive experiences that bridge the gap between 
                 commercial appeal and artistic integrity, bringing brands and stories to life 
                 through masterful video editing and striking graphic design.

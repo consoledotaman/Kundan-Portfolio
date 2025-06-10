@@ -36,7 +36,7 @@ const WorkSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-linen">
+    <section className="py-20 px-6 section-accent">
       <div className="max-w-7xl mx-auto">
         <h2 className="section-heading text-center mb-16 animate-fade-in">
           BODY OF WORK
@@ -55,11 +55,11 @@ const WorkSection = () => {
                   alt={work.title}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-forest bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                <div className="absolute inset-0 bg-dark-forest bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
               </div>
               
               <div className="p-6">
-                <h3 className="font-benguiat text-xl font-bold text-forest mb-3">
+                <h3 className="font-benguiat text-xl font-bold text-gold mb-3">
                   {work.title}
                 </h3>
                 <p className="body-text text-sm">
