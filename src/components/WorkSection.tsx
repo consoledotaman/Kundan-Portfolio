@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Meteors } from '@/components/ui/meteors';
 
 const WorkSection = () => {
   const works = [
@@ -36,8 +37,10 @@ const WorkSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 section-accent">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-20 px-6 section-accent overflow-hidden">
+      <Meteors number={15} />
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <h2 className="section-heading text-center mb-16 animate-fade-in">
           BODY OF WORK
         </h2>

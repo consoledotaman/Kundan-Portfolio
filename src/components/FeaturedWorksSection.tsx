@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Meteors } from '@/components/ui/meteors';
 
 const FeaturedWorksSection = () => {
   const featuredWorks = [
@@ -22,8 +23,10 @@ const FeaturedWorksSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 section-dark">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-20 px-6 section-dark overflow-hidden">
+      <Meteors number={15} />
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="mb-16">
           <h2 className="section-heading mb-4 animate-fade-in">
             FEATURED WORK

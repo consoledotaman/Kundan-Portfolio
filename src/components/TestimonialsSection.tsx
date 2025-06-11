@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Meteors } from '@/components/ui/meteors';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -24,8 +25,10 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 section-dark">
-      <div className="max-w-6xl mx-auto">
+    <section className="relative py-20 px-6 section-dark overflow-hidden">
+      <Meteors number={15} />
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <h2 className="section-heading text-center mb-16 animate-fade-in">
           TESTIMONIALS
         </h2>
