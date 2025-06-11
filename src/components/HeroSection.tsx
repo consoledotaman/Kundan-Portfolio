@@ -1,9 +1,18 @@
 
 import React from 'react';
+import { NavBar } from '@/components/ui/tubelight-navbar';
+import { Home, User, Briefcase, FileText } from 'lucide-react';
 
 const HeroSection = () => {
+  const navItems = [
+    { name: 'Home', url: '#hero', icon: Home },
+    { name: 'About', url: '#bio', icon: User },
+    { name: 'Work', url: '#work', icon: Briefcase },
+    { name: 'Contact', url: '#contact', icon: FileText }
+  ];
+
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section id="hero" className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video
@@ -18,6 +27,9 @@ const HeroSection = () => {
         <div className="absolute inset-0 gradient-overlay"></div>
       </div>
 
+      {/* Navigation */}
+      <NavBar items={navItems} />
+
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-center items-start px-12">
         <div className="mb-8">
@@ -26,11 +38,6 @@ const HeroSection = () => {
             <br />
             MEMPHIS
           </h1>
-        </div>
-
-        {/* Top right navigation */}
-        <div className="absolute top-12 right-12">
-          <span className="body-text text-2xl text-light-cream">Portfolio</span>
         </div>
         
         {/* Bottom left text */}

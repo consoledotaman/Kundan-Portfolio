@@ -15,13 +15,27 @@ const Index = () => {
     <div className="min-h-screen bg-dark-forest">
       <LoaderSection />
       <HeroSection />
-      <DirectorialSection />
-      <BioSection />
-      <EducationSection />
-      <WorkSection />
-      <TestimonialsSection />
-      <FeaturedWorksSection />
-      <ContactSection />
+      <div id="directorial">
+        <DirectorialSection />
+      </div>
+      <div id="bio">
+        <BioSection />
+      </div>
+      <div id="education">
+        <EducationSection />
+      </div>
+      <div id="work">
+        <WorkSection />
+      </div>
+      <div id="testimonials">
+        <TestimonialsSection />
+      </div>
+      <div id="featured">
+        <FeaturedWorksSection />
+      </div>
+      <div id="contact">
+        <ContactSection />
+      </div>
     </div>
   );
 };
