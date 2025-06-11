@@ -17,7 +17,7 @@ const LoaderSection = () => {
   }
 
   return (
-    <section className="fixed inset-0 z-50 flex items-center justify-center section-dark overflow-hidden">
+    <section className="fixed inset-0 z-[60] flex items-center justify-center section-dark overflow-hidden">
       <Meteors number={20} />
       
       <div className="relative z-10 flex flex-col items-center justify-center space-y-8">
