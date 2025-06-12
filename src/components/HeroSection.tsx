@@ -22,9 +22,9 @@ const HeroSection = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
+          <source src="/website kundan.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 gradient-overlay"></div>
+        <div className="absolute inset-0 "></div>
       </div>
 
       {/* Navigation */}
@@ -34,15 +34,15 @@ const HeroSection = () => {
       <div className="relative z-10 h-full flex flex-col justify-center items-start px-12">
         <div className="mb-8">
           <h1 className="hero-text animate-fade-in">
-            PATRICK
+            KUNDAN
             <br />
-            MEMPHIS
+            UPADHYAY
           </h1>
         </div>
         
         {/* Bottom left text */}
         <div className="absolute bottom-12 left-12 max-w-md animate-slide-in-left">
-          <p className="body-text text-light-cream text-xl">
+          <p className="body-text text-light-cream text-l ml-4">
             Crafting tales that transcend time, genre, and expectation.
           </p>
         </div>

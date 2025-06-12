@@ -5,28 +5,28 @@ import { Meteors } from '@/components/ui/meteors';
 const EducationSection = () => {
   const education = [
     {
-      year: '2004-2008',
-      title: 'Elmswood Film Academy, New York',
-      subtitle: 'Bachelor of Fine Arts in Film Direction',
-      description: 'Under the guidance of renowned filmmakers, Patrick honed his directorial vision and craft, culminating in his acclaimed thesis film, "Shadows of Tomorrow."'
+      year: '2008-2021',
+      title: 'DAV Public School, Jsg, Odisha',
+      subtitle: 'Student',
+      description: 'I completed my schooling up to 10th grade from DAV Public School, Jsg, Odisha under the CBSE board in 2021.'
     },
     {
-      year: '2000-2002',
-      title: 'Greenwood College, California',
-      subtitle: "Associate's Degree in Screenwriting",
-      description: 'It was here that Patrick\'s passion for cinema transformed from a hobby into a career aspiration. His first screenplay, "Lost Letters," won the college\'s prestigious Silver Pen Award.'
+      year: '2021-2023',
+      title: 'Vikash Residential School, Sambalpur, Odisha',
+      subtitle: 'Higher Secondary Education',
+      description: 'I completed my higher secondary education in the Science stream with a focus on Physics, Chemistry, and Biology.'
     },
     {
-      year: '2002-2003',
-      title: 'Lyon Workshop for Visual Storytelling, Paris France',
-      subtitle: 'Advanced Certificate in Visual Narrative',
-      description: 'A transformative three-month intensive where Patrick was introduced to avant-garde European cinema techniques, forever shaping his storytelling.'
+      year: '2023-2024',
+      title: 'Aakash Institute, Bhilai, Chhattisgarh',
+      subtitle: 'Preparation for NEET',
+      description: 'Regularly taking mock tests, analyzing performance, and improving time management strategies.'
     },
     {
-      year: '2002-2003',
-      title: 'Advanced Workshop in Comedy Direction',
-      subtitle: 'Humorville Film Institute, Sydney',
-      description: 'Focused on modern comedic narratives and the art of comedic timing in storytelling.'
+      year: '2024-continuing',
+      title: 'GGU, Bilaspur, Chhattisgarh',
+      subtitle: 'Bachelor of Science in Enthropology',
+      description: 'Currently pursuing a Bachelor of Science in Enthropology, focusing on human societies and cultural development.'
     }
   ];
 
@@ -49,7 +49,7 @@ const EducationSection = () => {
               className="space-y-6 animate-slide-in-left hover:scale-105 transition-transform duration-300"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="text-gold font-benguiat text-2xl font-bold animate-glow">
+              <div className="text-gold font-benguiat text-2xl font-bold ">
                 {item.year}
               </div>
               

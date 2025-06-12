@@ -11,9 +11,9 @@ const BioSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left side - Image */}
           <div className="animate-slide-in-left">
-            <div className="portfolio-card animate-float">
+            <div className="portfolio-card ">
               <img 
-                src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=800&fit=crop"
+                src="/images/bio-img.jpg"
                 alt="Featured Work"
                 className="w-full h-96 lg:h-[600px] object-cover"
               />
@@ -24,36 +24,23 @@ const BioSection = () => {
           <div className="space-y-12 animate-slide-in-right">
             {/* Bio */}
             <div className="animate-fade-in">
-              <h3 className="font-benguiat text-3xl md:text-4xl font-bold text-gold mb-6">
-                CREATIVE BIO
+              <h3 className="font-benguiat text-3xl md:text-5xl font-bold text-gold mb-6">
+                BIO
               </h3>
-              <p className="body-text mb-4">
-                With over a decade of experience in visual storytelling, I've developed 
-                a distinctive approach that blends cinematic techniques with cutting-edge 
-                design principles. My journey began in traditional film editing and evolved 
-                into a comprehensive creative practice.
+              <p className="body-text text-xl leading-relaxed mb-6">
+                Kundan Upadhyay is a visionary director whose cinematic journey has been marked by a profound exploration of human emotions and narratives. With a unique blend of artistry and storytelling, he has captivated audiences across the globe.
               </p>
-              <p className="body-text">
-                From intimate documentaries to large-scale commercial campaigns, 
-                my work spans diverse industries while maintaining a consistent focus 
-                on authentic narrative and visual excellence.
-              </p>
+              
             </div>
 
             {/* Approach */}
             <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <h3 className="font-benguiat text-3xl md:text-4xl font-bold text-gold mb-6">
+              <h3 className="font-benguiat text-3xl md:text-5xl font-bold text-gold mb-6">
                 MY APPROACH
               </h3>
-              <p className="body-text mb-4">
-                Every project begins with deep listening and understanding. I believe 
-                that the most powerful visuals emerge from genuine connection with the 
-                story being told and the audience experiencing it.
-              </p>
+              
               <p className="body-text">
-                My methodology combines strategic thinking with intuitive creativity, 
-                ensuring that each piece not only looks exceptional but serves its 
-                intended purpose with precision and impact.
+                Film, for me, has always been more than just a visual medium; it's a canvas where human emotions, landscapes, and stories converge. Every frame I craft is a blend of my experiences, dreams, and the myriad tales I've encountered on my journey. With each film, I aim to bridge the gap between reality and artistry, taking audiences on an immersive journey that resonates deep within.
               </p>
             </div>
           </div>

@@ -5,27 +5,28 @@ import { Meteors } from '@/components/ui/meteors';
 const WorkSection = () => {
   const works = [
     {
-      title: 'Commercial Campaign',
-      description: 'Brand storytelling through dynamic motion graphics',
+      title: 'XYZ Motion Graphics',
+      description: 'Innovative motion graphics for brand storytelling',
+      
       image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=400&fit=crop'
     },
     {
-      title: 'Documentary Edit',
-      description: 'Emotional narrative construction and pacing',
+      title: 'Bla Bla ',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
       image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop'
     },
     {
-      title: 'Music Video',
-      description: 'Rhythmic editing synchronized with audio',
+      title: 'AMAN RAJ',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
       image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop'
     },
     {
-      title: 'Corporate Identity',
-      description: 'Complete visual branding system design',
+      title: 'Gandu',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop'
     },
     {
-      title: 'Event Coverage',
+      title: 'XYZ ABC',
       description: 'Live event documentation and highlights',
       image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=400&fit=crop'
     },

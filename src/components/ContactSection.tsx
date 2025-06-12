@@ -28,15 +28,15 @@ const ContactSection = () => {
             <div className="space-y-4 text-left">
               <div className="flex items-center space-x-4">
                 <div className="w-2 h-2 bg-gold rounded-full"></div>
-                <span className="body-text">hello@patrickmemphis.com</span>
+                <span className="body-text">kundanlodu@gmail.com</span>
               </div>
               <div className="flex items-center space-x-4">
                 <div className="w-2 h-2 bg-gold rounded-full"></div>
-                <span className="body-text">+1 (555) 123-4567</span>
+                <span className="body-text">+91 91141 36575</span>
               </div>
               <div className="flex items-center space-x-4">
                 <div className="w-2 h-2 bg-gold rounded-full"></div>
-                <span className="body-text">Los Angeles, CA</span>
+                <span className="body-text">Bilaspur, Chhattisgarh</span>
               </div>
             </div>
           </div>

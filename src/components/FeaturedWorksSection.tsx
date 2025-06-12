@@ -6,18 +6,18 @@ import { Meteors } from '@/components/ui/meteors';
 const FeaturedWorksSection = () => {
   const featuredWorks = [
     {
-      title: 'BREAKING BOUNDARIES: PATRICK MEMPHIS TRANSFORMS INDIE CINEMA WITH WHISPERS OF THE CITY',
-      description: 'A powerful narrative exploring human resilience through intimate storytelling and innovative editing techniques that push the boundaries of conventional cinema.',
+      title: 'BRANDING REIMAGINED: VISUAL IDENTITY DESIGN FOR URBAN YOUTH FESTIVAL',
+      description: 'Crafted a dynamic brand identity and promotional kit, including posters, banners, and social media visuals, that captured the vibrant spirit of youth culture.',
       image: 'https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=800&h=600&fit=crop'
     },
     {
-      title: 'FROM INDIE TO ICON: PATRICK MEMPHIS AND THE EVOLUTION OF BEGINNING\'S END',
-      description: 'Multi-platform visual identity and motion graphics package that revolutionized how independent films approach mainstream audiences.',
+      title: 'STORYTELLING IN MOTION: EVENT RECAP VIDEO FOR TECHVERSE 2024',
+      description: 'Designed and edited a high-energy aftermovie with motion graphics, transitions, and sound design, generating over 50k views within the first week of release.',
       image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop'
     },
     {
-      title: 'IN CONVERSATION WITH PATRICK MEMPHIS: THE ARTISTIC VISION BEHIND CHILDREN OF THE FALL',
-      description: 'An intimate look into the creative process behind one of the year\'s most critically acclaimed independent films.',
+      title: 'SOCIAL MEDIA MAGIC: CONTENT PACK FOR LUXURY SKINCARE BRAND',
+      description: 'Developed a cohesive visual style for Instagram reels, carousel posts, and ad creatives — boosting engagement by 70% over 3 months.',
       image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=600&fit=crop'
     }
   ];
@@ -33,14 +33,8 @@ const FeaturedWorksSection = () => {
           </h2>
           <div className="w-full h-0.5 bg-gold"></div>
           
-          {/* Tip box */}
-          <div className="float-right mt-8 border border-gold/30 p-6 max-w-md">
-            <h3 className="font-benguiat text-lg font-bold text-gold mb-2">Tip</h3>
-            <p className="body-text text-sm">
-              You can paste direct links on this page to show a preview of the article.
-              *Delete this tip before publishing your website.
-            </p>
-          </div>
+          
+          
         </div>
 
         <div className="space-y-16 clear-both">

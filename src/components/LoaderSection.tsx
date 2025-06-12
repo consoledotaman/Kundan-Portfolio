@@ -29,7 +29,7 @@ const LoaderSection = () => {
         
         <div className="text-center">
           <h2 className="font-benguiat text-2xl md:text-3xl font-bold text-gold mb-2">
-            PATRICK MEMPHIS
+            KUNDAN UPADHYAY
           </h2>
           <p className="body-text text-light-cream">
             Loading Portfolio...

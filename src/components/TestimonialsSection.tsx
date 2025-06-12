@@ -5,22 +5,22 @@ import { Meteors } from '@/components/ui/meteors';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      quote: "Exceptional creativity and technical skill. The final product exceeded all our expectations and truly captured our brand's essence.",
-      author: "Sarah Johnson",
-      position: "Marketing Director",
-      company: "Creative Studios"
+      quote: "“Working with Kundan was an absolute pleasure. Their eye for design, attention to detail, and ability to translate vague ideas into visually stunning graphics and videos truly elevated our brand. Whether it was social media creatives, promotional videos, or branding assets, everything was delivered on time and beyond expectations.”",
+      author: "Vinita Patel",
+      position: "MD & Founder",
+      company: "Aarug Tales"
     },
     {
-      quote: "A master of visual storytelling. Every frame is carefully crafted and purposeful. Highly recommended for any serious project.",
-      author: "Michael Chen",
-      position: "Film Producer",
-      company: "Independent Films"
+      quote: "“As a teammate, Kundan brings both creativity and clarity to the table. Their video edits are smooth, impactful, and always align perfectly with the project goals. Their ability to handle both graphic design and video workflows makes them an invaluable asset to any creative team.”",
+      author: "Ananya Panda",
+      position: "Communication Lead",
+      company: "Aarug Tales"
     },
     {
-      quote: "Professional, creative, and reliable. The attention to detail and commitment to excellence is evident in every project.",
-      author: "Emma Rodriguez",
-      position: "Brand Manager",
-      company: "Global Brands Inc."
+      quote: "“We hired Kundan to help us build a visual identity from scratch. From the logo to explainer videos and brand reels, he managed everything with precision and passion. Their creativity matched with a strong sense of storytelling really helped us connect with our audience.”",
+      author: "xyz xyz",
+      position: "HR & Vice President ",
+      company: "Basta Foundation"
     }
   ];
 
